@@ -5,31 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terrible Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles900px.css" media="(max-width: 900px)">
 </head>
 <body>
-
     <h1>Terrible Calculator</h1>
+    <h3>Enter 2 Integers</h3>
+    <div class="content">
+        <p>
+        <label class="number1" for="number1">Number 1: 
+            <input type="text" name="number1" id="number1">
+        </label>
+        </p>
 
-    <p>
-    <label for="number1">Number 1: 
-        <input type="text" name="number1" id="number1">
-    </label>
-    </p>
+        <select class='operator' name="operator" id="operator">
+            <option value="+"> + </option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
 
-    <select name="operator" id="operator">
-        <option value="+"> + </option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-    </select>
+        <p>
+        <label class="number2" for="number2">Number 2: 
+            <input type="text" name="number2" id="number2">
+        </label>
+        </p>
 
-    <p>
-    <label for="number2">Number 2: 
-        <input type="text" name="number2" id="number2">
-    </label>
-    </p>
-
-    <button id="calculateButton">Calculate</button>
+        <button id="calculateButton">Calculate</button>
+    </div>
 
     <h2 >Result: <span id="result">?</span></h2>
     

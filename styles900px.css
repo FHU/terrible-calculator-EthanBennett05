@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.content {
+    display: block;
+}
+
+.number1, .number2 {
+    background-color: orange;
+    padding: 1rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}

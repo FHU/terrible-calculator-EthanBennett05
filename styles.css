@@ -6,9 +6,38 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(47, 47, 47);
     color: white;
     display: block;
     max-width: 80%;
     margin: auto;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 1rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem 0rem;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.number1, .number2 {
+    background-color: orange;
+    padding: 1rem;
 }

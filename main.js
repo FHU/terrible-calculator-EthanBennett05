@@ -15,6 +15,11 @@ function calculate() {
     const num2 = parseFloat(num2Input.value)
     const operator = operatorSelect.value;
 
+    if (isNaN(num1) || isNaN(num2)) {
+        resultSpan.innerText = 'Error: Please enter valid Integers';
+        return;
+    }
+
     let result
     if( operator === "+") {
         result = num1 + num2

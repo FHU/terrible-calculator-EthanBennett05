@@ -41,3 +41,10 @@ h2 {
     background-color: orange;
     padding: 1rem;
 }
+
+.clear {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    font-size: larger;
+}

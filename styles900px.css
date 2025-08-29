@@ -14,3 +14,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
+h3 {
+    margin: 0rem 0rem;
+}

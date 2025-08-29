@@ -4,9 +4,11 @@ const num2Input = document.getElementById('number2')
 const operatorSelect = document.getElementById('operator')
 const calculateButton = document.getElementById('calculateButton')
 const resultSpan = document.getElementById('result')
+const clearButton = document.getElementById('clearCalculator')
 
 // Step 2 - Add an event listener to the button to call a function when clicked
 calculateButton.addEventListener('click', calculate)
+clearButton.addEventListener('click', clearCalculator)
 
 function calculate() {
     const num1 = parseFloat(num1Input.value)
@@ -26,7 +28,20 @@ function calculate() {
     else if (operator === '/') {
         result = num1 / num2
     }
+    else if (operator === '**') {
+        result = num1 ** num2
+    }
+    else if (operator === 'sqrt') {
+        result = num1 ** (1/num2)
+    }
     
     // Step 3 - update the result span with the result of the calculation
     resultSpan.innerText = result;
+}
+
+function clearCalculator() {
+    num1Input.value = ''
+    num2Input.value = ''
+    operatorSelect.value = '+'
+    resultSpan.innerText = '?'
 }

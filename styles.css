@@ -40,6 +40,7 @@ h2 {
 .number1, .number2 {
     background-color: orange;
     padding: 1rem;
+    color: black;
 }
 
 .clear {

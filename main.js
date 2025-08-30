@@ -5,10 +5,15 @@ const operatorSelect = document.getElementById('operator')
 const calculateButton = document.getElementById('calculateButton')
 const resultSpan = document.getElementById('result')
 const clearButton = document.getElementById('clearCalculator')
+let lightModeButton = document.getElementById('lightMode')
 
 // Step 2 - Add an event listener to the button to call a function when clicked
 calculateButton.addEventListener('click', calculate)
 clearButton.addEventListener('click', clearCalculator)
+lightModeButton.addEventListener('click', function() {
+    document.body.classList.toggle('light-mode');
+    this.innerText = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
+})
 
 function calculate() {
     const num1 = parseFloat(num1Input.value)

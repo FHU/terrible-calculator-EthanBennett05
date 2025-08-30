@@ -12,6 +12,12 @@ body {
     max-width: 80%;
     margin: auto;
 }
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -43,9 +49,10 @@ h2 {
     color: black;
 }
 
-.clear {
+.options {
     display: flex;
     justify-content: center;
     padding-top: 3rem;
     font-size: larger;
+    gap: 3rem;
 }
